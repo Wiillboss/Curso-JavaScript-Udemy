@@ -4,6 +4,7 @@
 const PI = 3.141592;
 let raio = 12;
 let areaDaCircu = PI * raio * raio;
+//Tentativa de usar o POW
 //let areCircPI = Math.PI * Math.pow(raio);
 //let quad = Math.pow(2);
 
