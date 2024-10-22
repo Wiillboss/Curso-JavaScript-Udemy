@@ -1,3 +1,7 @@
+/*
+setInterval: Essa função dispara uma outra função a partir de um determinado intervalo que foi informado
+*/
+
 function pessoa(){
     this.idade = 0
 
