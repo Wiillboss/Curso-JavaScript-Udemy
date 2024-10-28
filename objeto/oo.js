@@ -13,4 +13,12 @@ objeto = {
     }
 }
 
-objeto.processamento ()
+objeto.processamento () // foco passou a ser o objeto
+
+/*
+    Principios importantes:
+        1. abstrção
+        2. encapsulamento
+        3. herença (prototype)
+        4. polimorfismo (multiplasformas)
+*/
