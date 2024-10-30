@@ -1,7 +1,5 @@
 // usando a notação literal
-const obj1 = {
-
-}
+const obj1 = {}
 console.log(obj1)
 
 // Objeto em JS
@@ -10,17 +8,21 @@ const obj2 = new Object
 console.log(obj2)
 
 // Funções construtoras
-// Os parametros: NOME, PRECP, DESC estão encapsulados e só podem ser vistos dentro da função, já o THIS é visto fora do objeto
+/* 
+   Os parametros: NOME, PRECP, DESC estão encapsulados e só podem ser vistos dentro da função,
+     já o o parametro apontado pelo THIS, é visto fora do objeto.
+   Quando um parametro é apontado pelo THIS, ele é público, já aqueles criado dentro da função (dentro de parenteses), é privado.  
+*/
 function Produto(nome, preco, desc) {
     this.nome = nome
     this.getPrecoComDesconto = () => {
-        returnpreco * (1 - desc)
+        return preco * (1 - desc)
     }
 }
 
 const p1 = new Produto('Caneta', 7.99, 0.15)
 const p2 = new Produto('Notebook', 2998.99, 0.25)
-console.log(ps1.getPrecoComDesconto(). p2.getPrecoComDesconto)
+console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
 
 // Função Factory
 function criarFuncionário ( nome, salarioBase, faltas ) {
@@ -42,8 +44,8 @@ console.log(f1.getSalario(), f2.getSalario())
 
 const filha = Object.create(null)
 filha.nome = "Ana"
-console.leg(filha)
+console.log(filha)
 
 // Uma função famosa que retorna ao Oketo...
-const fromJSON = JSON.parse('{"Info": "Sou um JSON"}')
+const fromJSON = JSON.parse('{"info": "Sou um JSON"}')
 console.log(fromJSON.info)
