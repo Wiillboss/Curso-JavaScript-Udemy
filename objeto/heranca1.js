@@ -9,7 +9,7 @@ const volvo = {
 }
 
 console.log(ferrari.prototype)
-console.log(ferrari.__proto__)
+console.log(ferrari.__proto__) // __proto__ Esse atributo acessa o objeto PAI
 console.log(ferrari.__proto__ === Object.prototype)
 console.log(volvo.__proto__ === Object.prototype)
 console.log(Object.prototype.__proto__)
