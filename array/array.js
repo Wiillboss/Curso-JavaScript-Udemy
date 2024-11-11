@@ -29,3 +29,10 @@ console.log(aprovados.length)
 console.log(aprovados [8] === undefined) // pergunta se o valor da posição é UNDEFINED. Sim é.
 console.log(aprovados [8] === null) // pergunta se o valor da posição é NULL. Não é.
 console.log(aprovados)
+aprovados.sort()
+/*
+    Com relação ao SORT acima:
+    Ajustando a ordenação do array em ordem alfabetica e deixando os elementos UNDEFINED após a ordenação,
+     assim retornando um novo array.
+*/
+console.log(aprovados)
