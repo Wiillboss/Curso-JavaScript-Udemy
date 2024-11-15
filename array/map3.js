@@ -1,7 +1,7 @@
-arrray.prototype.map2 = function(callcak) {
+Array.prototype.map2 = function(callback) {
     const newArray = []
-    for (let i = o; i < this.length; I++) {
-        newArray.push(callcak(this[i], i, this))
+    for (let i = 0; i < this.length; i++) {
+        newArray.push(callback(this[i], i, this))
     }
     return newArray
 }
@@ -15,7 +15,7 @@ const carrinho = [
     
 // Retornar um array apenas com os preços
 
-const paraObjteto = json => json.parse(json)
+const paraObjteto = json => JSON.parse(json)
 const apenasPreco = produto => produto.preco
 
 const resultado = carrinho.map2(paraObjteto).map2(apenasPreco)
